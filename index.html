@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form action="action_page.php"></form>
     <nav id="navigation">
-        <a id="Home" href="#introo"><h3 class="navtext">Home</h3>&nbsp &nbsp <img class="icon"src="Photos/Home.jpg" alt="#"></a>
+        <a id="Home" href="#intro"><h3 class="navtext">Home</h3>&nbsp &nbsp <img class="icon"src="Photos/Home.jpg" alt="#"></a>
         <a id="Education" href="#educa"><h3 class="navtext">Education </h3>&nbsp &nbsp<img class="icon" src="Photos/edu.jpg" alt=""></a>
-        <a id="Skills" href="#"><h3 class="navtext">Skills</h3>&nbsp &nbsp <img class="icon"  src="Photos/skills.jfif" alt=""></a>
+        <a id="Skills" href="#skills"><h3 class="navtext">Skills</h3>&nbsp &nbsp <img class="icon"  src="Photos/skills.jfif" alt=""></a>
         <a id="Contact" href="#"><h3 class="navtext">Contact</h3>&nbsp &nbsp <img class="icon" src="Photos/contact.png" alt=""></a>
     </nav>
-    <div class="intro" >
+    <div class="intro" id="intro" >
         <div class="myself">
             Hey There!
             <br>
             Divyanshu Jajoo this side.
             
         </div>
-        <img class="profilepic" src="Photos/profilepic.jpg" class="profile">
+        <img class="profilepic" src="Photos/profilepic.jpg" class="profile"alt="#">
     </div>
     <div class="About_me">
         About me
@@ -63,7 +64,39 @@
         </div>
         
     </div>
-    
+
+    <br>
+    <h1 class="head">Skills</h1>
+    <br><br><br><br>
+    <div class="SKILLS" id="skills">
+
+        <br>
+        <div class="HTML CSS">
+            <img class="card-img-top mx-auto" src="Photos/HTML_CSS.png" alt="Card image cap" style="height: 60%; width: 60%;">
+            <h2>HTML and CSS</h2>
+        </div>
+        <div class="C C++">
+            <img class="card-img-top mx-auto" src="Photos/c++.jfif" alt="Card image cap" style="height: 60%; width: 60%;">
+            <h2>C/C++</h2>
+            
+        </div>
+        
+        <div class="Data Stuctures and Algorithms">
+            <img class="card-img-top mx-auto" src="Photos/data structures.png" alt="Card image cap" style="height: 60%; width: 60%;">
+            <h2>Data Stuctures</h2>
+            <h2>& Algorithms</h2>
+
+        </div>
+        <div class="Data Stuctures and Algorithms">
+           <div class="handles">
+            <h2>Problem solving handles</h2>
+            <button type="button" class="btn btn-outline-dark" onclick="window.location.href='https://auth.geeksforgeeks.org/user/divyanshujajoo1/practice;'">
+             <img src="Photos/gfg.png" class="float-right rounded img-fluid" width="30px" height="30px" cursor="pointer" alt="...">
+             <button type="button" class="btn btn-outline-dark" onclick="window.location.href='https://codeforces.com/profile/divyanshujajoo1;'">
+                <img src="Photos/codeforces.jfif" class="float-right rounded img-fluid" width="30px" height="30px" cursor="pointer" alt="...">
+        </div>
+    </div>
+    </div>
  
     
 </body>
