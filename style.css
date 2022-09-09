@@ -10,22 +10,18 @@
   flex-direction: row;
   list-style: none;
   color: white;
- font-style:italic;
+  font-family: Comic Sans Ms;
   font-size: 1.5em;
+  margin-top:1em;
   margin-left: 10vw;
   display: flex;
   flex-direction: row;
+  transform: translateY(-.2em);
+  justify-content:center;
+  align-items: center;
+}
 
 
-  
-}
-.icon{
-  height: 1.5em;
-  padding-left:0vw;
-}
-.navtext{
-  display:none;
-}
 #navigation a{
   text-decoration: none;
   position: relative;
@@ -38,47 +34,55 @@
   margin: .5em;
   cursor: pointer;
 }
-#navigation #home:hover {
-  transition-timing-function:ease-in;
-  transition-duration: .25s;
-}
-#navigation #Education:hover {
-  transition-timing-function:ease-in;
-  transition-duration: .25s;
-}#navigation #Skills:hover {
-  transition-timing-function:ease-in;
-  transition-duration: .25s;
 
 
-}
-#navigation #Contact:hover {
-  transition-timing-function:ease-in;
-  transition-duration: .25s;
-}
+    .navtext{
+      display:inline-block;
+      text-align: center;
+  }
 
-#navigation a:hover .navtext{
-  display: inline-block;
-
-}
-#navigation a:nth-of-type(1)
+  #navigation a:nth-of-type(1)
 {
-background-color:rgb(255, 234, 0);
-color: rgb(255, 234, 0);
+background:none;
+color: rgb(255, 149, 0);
 }
 #navigation a:nth-of-type(2)
 {
-background-color: rgb(255, 234, 0);
-columns: rgb(255, 234, 0);
+background:none;
+columns: rgb(255, 149, 0);
 }
 #navigation a:nth-of-type(3)
 {
-background-color:rgb(255, 234, 0);
-color: rgb(255, 234, 0);
+background:none;
+color: rgb(255, 149, 0);
 }
 #navigation a:nth-of-type(4)
 {
-background-color:rgb(255, 234, 0);
-color: rgb(255, 234, 0);
+background:none;
+color:rgb(255, 149, 0);
+}  
+#navigation a:nth-of-type(5)
+{
+background:none;
+color:rgb(255, 149, 0);
+}
+
+#navigation a{
+  background: none;
+  color: rgb(255, 149, 0);
+  border: solid 2px;
+  padding:0 0;
+  right:0;
+  text-align: center;
+  width: max-content;
+  font-size: 1.2rem;
+  transition: color .20s, border-color 0.20s , box-shadow 0.20s , transform 0.20s;
+}
+#navigation a:hover{
+  border-color: #f1ff5c;
+  color: white; 
+  box-shadow: 0 0.5em 0.5em -.4em #f1ff5c;
+  cursor: pointer;
 }
 
 
@@ -88,124 +92,24 @@ body {
   background-size:cover;
 }
 .intro{
-  display: flex;
-  height: 100vh;
-    width: 200vh;
   background-image: url(Photos/spot.jpg);
-  background-position: center;
-  background-position: 16vw;
-    background-repeat: no-repeat;
-
-}
- .myself{
+  background-size:100% 100%;
+  height: 100vh;
   display: flex;
-  position: absolute;
-  text-align: center;
-  width: 40vw;
-  margin-right: 90vw;
-  margin-left: 64vh;;
-  margin-top: 27vh;
-  font-size: 7vh;
-  font-weight: bold;
-  color: rgb(225, 67, 67);
-  font-style:italic;
-}
-
-.profilepic{
   justify-content: center;
-  align-items:center;
-  display: flex;
-  border-radius: 100vh;
-  height: 40%;
-  margin-left: 40%;
-  margin-right: 40vw;
-  margin-top: 25%;
+  align-items: center;
 }
-
-
-
-    #navigation {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        color: white;
-        font-family: Comic Sans Ms;
-        font-size: 1.5em;
-        margin-top:1em;
-        transform: translateY(-.2em);
-        justify-content:center;
-        align-items: center;
-    }
-    .navtext{
-        display:inline-block;
-        text-align: center;
-    }
-    .icon{
-        display: none;
-    }
-
-    #navigation #home:hover {
-        transform: translateX(0);
-        transition-timing-function:ease-in;
-        transition-duration: .25s;
-    }
-    #navigation #Education:hover {
-        transform: translateX(0);
-        transition-timing-function:ease-in;
-        transition-duration: .25s;
-    }#navigation #Skills:hover {
-        transform: translateX(0);
-        transition-timing-function:ease-in;
-        transition-duration: .25s;
-    }
-    #navigation #cContact:hover {
-        transform: translateX(0);
-        transition-timing-function:ease-in;
-        transition-duration: .25s;
-    }
-    #navigation a:hover .navtext{
-        display: inline-block;
-    
-    }
-    #navigation a:nth-of-type(1)
-    {
-    background:none;
-    color: rgb(255, 149, 0);
-    }
-    #navigation a:nth-of-type(2)
-    {
-    background:none;
-    columns: rgb(255, 149, 0);
-    }
-    #navigation a:nth-of-type(3)
-    {
-    background:none;
-    color: rgb(255, 149, 0);
-    }
-    #navigation a:nth-of-type(4)
-    {
-    background:none;
-    color:rgb(255, 149, 0);
-    }
-
-   #navigation a{
-        background: none;
-        color: rgb(255, 149, 0);
-        border: solid 2px;
-        padding:0 0;
-        right:0;
-        text-align: center;
-        width: max-content;
-        font-size: 1.2rem;
-        transition: color .20s, border-color 0.20s , box-shadow 0.20s , transform 0.20s;
-    }
-    #navigation a:hover{
-        border-color: #f1ff5c;
-        color: white; 
-        box-shadow: 0 0.5em 0.5em -.4em #f1ff5c;
-        cursor: pointer;
-    }
+#profilepic{
+  width:auto;
+  height: 40%;
+  border-radius: 50%;
+}
+#MyIntro{
+  padding-left: 0.8em ;
+  color: rgb(255, 86, 24);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
     
 
 
@@ -217,6 +121,7 @@ body {
   font-weight: bold;
   font-size: 8vh;
   color: #206A5D;
+  margin-top: 10vh;
 }
 
 .box{
@@ -244,6 +149,7 @@ body {
   font-style: italic;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #6089fb;
+  margin-bottom:10vh ;
 }
 .education
 {
@@ -254,6 +160,7 @@ body {
     color: rgb(238, 238, 189);
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 10vh;
     
 }
 
@@ -321,54 +228,50 @@ body {
   border-radius: 2vh;
   border-top: 2vh;
 }
+ @media (max-width:1285px){
+  .Mydescription{
+    font-size: 2.1vw;
+  }
+ }
+
+
 
 @media (max-width: 1160px) {
-  .intro{
-    display: flex;
-    height: 100vh;
-      width: 180vh;
-    background-image: url(Photos/spot.jpg);
-    background-position: left;
-    background-position: 10vw;
-      background-repeat: no-repeat;
-  
+  #MyIntro{
+    padding-left: 0.8em ;
+    color: rgb(255, 86, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+#profilepic{
+    width:auto;
+    height: 35%;
+    border-radius: 50%;
+}
+
+  .About_me{
+    margin-left: 12vw;
+  }
+
+  .Mydescription{
+    font-size: 2.4vw;
   }
 }
 
 @media(max-width:680px){
   .intro{
-    display: flex;
     height: 100vh;
-      width: 180vh;
-    background-image: url(Photos/spot.jpg);
-    background-position: left;
-    background-position: -50vw;
-      background-repeat: no-repeat;
-  
-  }
-  .myself{
     display: flex;
-    position: absolute;
-    text-align: center;
-    width: 40vw;
-    margin-right: 90vw;
-    margin-left: 19vh;;
-    margin-top: 25vh;
-    font-size: 5vh;
-    font-weight: bold;
-    color: rgb(225, 67, 67);
-    font-style:italic;
-  }
-  .profilepic{
     justify-content: center;
-    align-items:center;
-    display: flex;
-    border-radius: 100vh;
-    height: 30%;
-    margin-left: 9%;
-    margin-right: 40vw;
-    margin-top: 27%;
-  }
+    flex-direction: column;
+    align-items: center;
+}
+  
+  #profilepic{
+    width:auto;
+    height: 35%;
+    border-radius: 50%;
+}
 
   .Mydescription{
     font-size: 2.3vh;
@@ -430,23 +333,7 @@ body {
   flex-wrap: wrap;
   
 }
-
-.contact {
-  text-align: center;
-}
-
-.foot {
-  padding: 4px;
-  color: rgb(102, 4, 94);
-  margin-left: 3px;
-}
-
-.foot:hover {
-  color: rgb(102, 4, 94);
-}
-
 .align{
-  border-radius: 2vh;
   border-top: 2vh;
 }
 
