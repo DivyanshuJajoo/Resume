@@ -253,6 +253,11 @@ body {
 }
 
 @media(max-width:680px){
+
+  #navigation{
+    display: none;
+}
+
   .intro{
     height: 100vh;
     display: flex;
