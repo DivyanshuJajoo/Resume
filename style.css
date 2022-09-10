@@ -212,17 +212,10 @@ body {
 
 .contact {
   text-align: center;
+  color: #e32dff;
 }
 
-.foot {
-  padding: 4px;
-  color: rgb(102, 4, 94);
-  margin-left: 3px;
-}
 
-.foot:hover {
-  color: rgb(102, 4, 94);
-}
 
 .align{
   border-radius: 2vh;
@@ -340,6 +333,17 @@ body {
 }
 .align{
   border-top: 2vh;
+}
+
+.show {
+ margin-top: 1vh;
+  color: rgb(157, 40, 147);
+  margin-left: 3px;
+}
+
+.show:hover {
+  color: rgb(101, 20, 94);
+
 }
 
 
