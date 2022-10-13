@@ -162,7 +162,9 @@ body {
 
 .contact {
   text-align: center;
-  color: rgb(94, 94, 94);
+  color: rgb(255, 255, 255);
+  display:block;
+  background-color: rgba(186,186,186);
 }
 
 
