@@ -4,86 +4,29 @@
   font-style:italic;
 }
 
-#navigation {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  color: white;
-  font-family: Comic Sans Ms;
-  font-size: 1.5em;
-  margin-top:1em;
-  margin-left: 10vw;
-  display: flex;
-  flex-direction: row;
-  transform: translateY(-.2em);
-  justify-content:center;
-  align-items: center;
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
 }
 
-
-#navigation a{
-  text-decoration: none;
-  position: relative;
-  right: 8em;
-  width:10em;
-  padding:.3em 0;
-  text-align: right;
-  border-radius: .3em;
-  padding-right: .3em;
-  margin: .5em;
-  cursor: pointer;
-}
-
-
-    .navtext{
-      display:inline-block;
-      text-align: center;
-  }
-
-  #navigation a:nth-of-type(1)
-{
-background:none;
-color: rgb(255, 149, 0);
-}
-#navigation a:nth-of-type(2)
-{
-background:none;
-columns: rgb(255, 149, 0);
-}
-#navigation a:nth-of-type(3)
-{
-background:none;
-color: rgb(255, 149, 0);
-}
-#navigation a:nth-of-type(4)
-{
-background:none;
-color:rgb(255, 149, 0);
-}  
-#navigation a:nth-of-type(5)
-{
-background:none;
-color:rgb(255, 149, 0);
-}
-
-#navigation a{
-  background: none;
-  color: rgb(255, 149, 0);
-  border: solid 2px;
-  padding:0 0;
-  right:0;
+.topnav a {
+  float: left;
+  color: #f2f2f2;
   text-align: center;
-  width: max-content;
-  font-size: 1.2rem;
-  transition: color .20s, border-color 0.20s , box-shadow 0.20s , transform 0.20s;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
 }
-#navigation a:hover{
-  border-color: #f1ff5c;
-  color: white; 
-  box-shadow: 0 0.5em 0.5em -.4em #f1ff5c;
-  cursor: pointer;
+
+.topnav a:hover {
+  background-color: #0428aa;
+  color: #f2f2f2
 }
+
+
 
 
 body {
@@ -219,7 +162,7 @@ body {
 
 .contact {
   text-align: center;
-  color: rgb(86, 86, 86);
+  color: rgb(94, 94, 94);
 }
 
 
@@ -261,7 +204,7 @@ body {
 
 @media(max-width:680px){
 
-  #navigation{
+  .topnav{
     display: none;
 }
 
@@ -358,12 +301,12 @@ body {
 }
 
 .show:hover {
-  color: rgb(101, 20, 94);
+  color: rgb(68, 68, 68);
 
 }
 
 .text-primary{
-  color:rgb(101, 20, 94);
+  color:rgb(68, 68, 68);
   font-style: italic;
 }
 
